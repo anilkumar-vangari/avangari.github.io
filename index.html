@@ -214,35 +214,18 @@
         </div>
     </footer>
 
-	
 
-<script type='text/javascript'>
-
-window.addEventListener("onEmbeddedMessagingReady", () => {
-console.log("Received the onEmbeddedMessagingReady event.");
-embeddedservice_bootstrap.userVerificationAPI.setIdentityToken({
-identityTokenType: "JWT",
-identityToken: "eyJraWQiOiJ0aGlyZHBhcnR5d2Vic2l0ZWtpZCIsImFsZyI6IlJTMjU2In0.eyJpc3MiOiJqd3Ric2EiLCJzdWIiOiJqdWxpYUBzZi5jb20iLCJleHAiOjE3NjU0NDk5MjcsImlhdCI6MTc2NTQ0NjMyN30.itCov3MjRS0kZvy_lMH6RksFz1tBXiLIQH4t5fRnIPelgfkbICbwPp8Tz7gnzeMJjk90ZsKJExSfmgkpfSz9tVmX-F0OqpjFfNkHZ8TJSyh2Ht3EUnUNjCYlIo7pAUR1x0ZF5jIlGTvFj41WN1w1Pme_Vz9aJogmNesUEvRich1Z-eXFth89e66idZA8AvfTi_GoRPZU9kTqtS9_SzqQPiBlseEpI8LgKjQTfw9k964aGEGq4733rib9RUsI9HLMetPi39dNwHGNaX2R4di3JAaJK-j1TFKoL6jyH-WjS3CMN_aQDRKU8Y96IrExuzwNXyD8KH_e7ogIFvB6VOLfGg"
-});
-});
-
-window.addEventListener("onEmbeddedMessagingIdentityTokenExpired", () => {
-console.log("Received the onEmbeddedMessagingIdentityTokenExpired event.");
-embeddedservice_bootstrap.userVerificationAPI.setIdentityToken({
-identityTokenType: "JWT",
-identityToken: "eyJraWQiOiJ0aGlyZHBhcnR5d2Vic2l0ZWtpZCIsImFsZyI6IlJTMjU2In0.eyJpc3MiOiJqd3Ric2EiLCJzdWIiOiJqdWxpYUBzZi5jb20iLCJleHAiOjE3NjU0NDk5MjcsImlhdCI6MTc2NTQ0NjMyN30.itCov3MjRS0kZvy_lMH6RksFz1tBXiLIQH4t5fRnIPelgfkbICbwPp8Tz7gnzeMJjk90ZsKJExSfmgkpfSz9tVmX-F0OqpjFfNkHZ8TJSyh2Ht3EUnUNjCYlIo7pAUR1x0ZF5jIlGTvFj41WN1w1Pme_Vz9aJogmNesUEvRich1Z-eXFth89e66idZA8AvfTi_GoRPZU9kTqtS9_SzqQPiBlseEpI8LgKjQTfw9k964aGEGq4733rib9RUsI9HLMetPi39dNwHGNaX2R4di3JAaJK-j1TFKoL6jyH-WjS3CMN_aQDRKU8Y96IrExuzwNXyD8KH_e7ogIFvB6VOLfGg"
-});
-});
+	<script type='text/javascript'>
 	function initEmbeddedMessaging() {
 		try {
 			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
 			embeddedservice_bootstrap.init(
-				'00DSG00000Z1raK',
-				'ThirdPartyWebsite',
-				'https://orgfarm-b5c8097be2.test1.my.pc-rnd.site.com/ESWThirdPartyWebsite1763788210898',
+				'00DLT00000CXZBN',
+				'thirdpartybsa',
+				'https://orgfarm-960695df01.test1.my.pc-rnd.site.com/ESWthirdpartybsa1773761579934',
 				{
-					scrt2URL: 'https://orgfarm-b5c8097be2.test1.my.pc-rnd.salesforce-scrt.com'
+					scrt2URL: 'https://orgfarm-960695df01.test1.my.pc-rnd.salesforce-scrt.com'
 				}
 			);
 		} catch (err) {
@@ -250,7 +233,10 @@ identityToken: "eyJraWQiOiJ0aGlyZHBhcnR5d2Vic2l0ZWtpZCIsImFsZyI6IlJTMjU2In0.eyJp
 		}
 	};
 </script>
-<script type='text/javascript' src='https://orgfarm-b5c8097be2.test1.my.pc-rnd.site.com/ESWThirdPartyWebsite1763788210898/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+<script type='text/javascript' src='https://orgfarm-960695df01.test1.my.pc-rnd.site.com/ESWthirdpartybsa1773761579934/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+
+
+
 </body>
 </html>
 
