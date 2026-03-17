@@ -1,12 +1,256 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sample Index Page</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bank of Troopers</title>
+	<style>
+	/* Reset and base styles */
+	* {
+	    margin: 0;
+	    padding: 0;
+	    box-sizing: border-box;
+	    font-family: Arial, sans-serif;
+	}
+	
+	body {
+	    line-height: 1.6;
+	    color: #333;
+	}
+	
+	a {
+	    text-decoration: none;
+	    color: inherit;
+	}
+	
+	/* Header */
+	header {
+	    background-color: #002663; /* BoA dark blue */
+	    color: white;
+	    padding: 15px 30px;
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	}
+	
+	header .logo {
+	    font-size: 1.5em;
+	    font-weight: bold;
+	}
+	
+	nav a {
+	    margin-left: 20px;
+	    font-weight: 500;
+	    color: white;
+	}
+	
+	nav a:hover {
+	    text-decoration: underline;
+	}
+	
+	/* Hero Section */
+	.hero {
+	    background: linear-gradient(rgba(0,38,99,0.8), rgba(0,38,99,0.8)), url('https://media.bizj.us/view/img/11138963/new-bank-of-america-logo.jpg') center/cover no-repeat;
+	    color: white;
+	    height: 80vh;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    text-align: center;
+	    padding: 0 20px;
+	}
+	
+	.hero h1 {
+	    font-size: 3em;
+	    margin-bottom: 20px;
+	}
+	
+	.hero p {
+	    font-size: 1.2em;
+	    margin-bottom: 30px;
+	}
+	
+	.hero .cta-btn {
+	    background-color: #ff0000; /* BoA red */
+	    color: white;
+	    padding: 15px 30px;
+	    border-radius: 5px;
+	    font-weight: bold;
+	    transition: background-color 0.3s ease;
+	}
+	
+	.hero .cta-btn:hover {
+	    background-color: #cc0000;
+	}
+	
+	/* Features Section */
+	.features {
+	    padding: 60px 20px;
+	    background-color: #f4f4f4;
+	    text-align: center;
+	}
+	
+	.features h2 {
+	    font-size: 2em;
+	    margin-bottom: 40px;
+	    color: #002663;
+	}
+	
+	.feature-cards {
+	    display: flex;
+	    flex-wrap: wrap;
+	    justify-content: center;
+	    gap: 30px;
+	}
+	
+	.feature-card {
+	    background-color: white;
+	    padding: 30px;
+	    border-radius: 10px;
+	    width: 300px;
+	    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	    transition: transform 0.3s ease;
+	}
+	
+	.feature-card:hover {
+	    transform: translateY(-5px);
+	}
+	
+	.feature-card h3 {
+	    color: #002663;
+	    margin-bottom: 15px;
+	}
+	
+	.feature-card p {
+	    font-size: 0.95em;
+	    color: #555;
+	}
+	
+	/* Footer */
+	footer {
+	    background-color: #002663;
+	    color: white;
+	    padding: 30px 20px;
+	    text-align: center;
+	}
+	
+	footer a {
+	    color: #ffcccb;
+	    margin: 0 10px;
+	}
+	
+	footer a:hover {
+	    text-decoration: underline;
+	}
+	
+	/* Responsive */
+	@media(max-width: 768px) {
+	    .feature-cards {
+		flex-direction: column;
+		align-items: center;
+	    }
+	
+	    .hero h1 {
+		font-size: 2.2em;
+	    }
+	
+	    .hero p {
+		font-size: 1em;
+	    }
+	}
+	</style>
+	
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is a sample index.html file.</p>
+   <!-- Header -->
+    <header>
+        <div class="logo">Bank of America</div>
+        <nav>
+            <a href="#">Personal</a>
+            <a href="#">Business</a>
+            <a href="#">Investing</a>
+            <a href="#">Help</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Welcome to Bank of Troopers</h1>
+        <p>Banking made simple, secure, and accessible for everyone.</p>
+        <a href="#" class="cta-btn">Get Started</a>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <h2>Our Services</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <h3>Checking Accounts</h3>
+                <p>Manage your everyday finances with ease, with a range of checking account options.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Credit Cards</h3>
+                <p>Choose from a variety of credit cards that fit your lifestyle and rewards preferences.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Loans & Mortgages</h3>
+                <p>Secure personal loans, auto loans, and mortgages to meet your financial goals.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Investing</h3>
+                <p>Grow your wealth with investment tools and guidance for every stage of life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Bank of Troopers powered by salesforce. All rights reserved.</p>
+        <div>
+            <a href="#">Privacy</a> | 
+            <a href="#">Security</a> | 
+            <a href="#">Contact Us</a>
+        </div>
+    </footer>
+
+	
+
+<script type='text/javascript'>
+
+window.addEventListener("onEmbeddedMessagingReady", () => {
+console.log("Received the onEmbeddedMessagingReady event.");
+embeddedservice_bootstrap.userVerificationAPI.setIdentityToken({
+identityTokenType: "JWT",
+identityToken: "eyJraWQiOiJ0aGlyZHBhcnR5d2Vic2l0ZWtpZCIsImFsZyI6IlJTMjU2In0.eyJpc3MiOiJqd3Ric2EiLCJzdWIiOiJqdWxpYUBzZi5jb20iLCJleHAiOjE3NjU0NDk5MjcsImlhdCI6MTc2NTQ0NjMyN30.itCov3MjRS0kZvy_lMH6RksFz1tBXiLIQH4t5fRnIPelgfkbICbwPp8Tz7gnzeMJjk90ZsKJExSfmgkpfSz9tVmX-F0OqpjFfNkHZ8TJSyh2Ht3EUnUNjCYlIo7pAUR1x0ZF5jIlGTvFj41WN1w1Pme_Vz9aJogmNesUEvRich1Z-eXFth89e66idZA8AvfTi_GoRPZU9kTqtS9_SzqQPiBlseEpI8LgKjQTfw9k964aGEGq4733rib9RUsI9HLMetPi39dNwHGNaX2R4di3JAaJK-j1TFKoL6jyH-WjS3CMN_aQDRKU8Y96IrExuzwNXyD8KH_e7ogIFvB6VOLfGg"
+});
+});
+
+window.addEventListener("onEmbeddedMessagingIdentityTokenExpired", () => {
+console.log("Received the onEmbeddedMessagingIdentityTokenExpired event.");
+embeddedservice_bootstrap.userVerificationAPI.setIdentityToken({
+identityTokenType: "JWT",
+identityToken: "eyJraWQiOiJ0aGlyZHBhcnR5d2Vic2l0ZWtpZCIsImFsZyI6IlJTMjU2In0.eyJpc3MiOiJqd3Ric2EiLCJzdWIiOiJqdWxpYUBzZi5jb20iLCJleHAiOjE3NjU0NDk5MjcsImlhdCI6MTc2NTQ0NjMyN30.itCov3MjRS0kZvy_lMH6RksFz1tBXiLIQH4t5fRnIPelgfkbICbwPp8Tz7gnzeMJjk90ZsKJExSfmgkpfSz9tVmX-F0OqpjFfNkHZ8TJSyh2Ht3EUnUNjCYlIo7pAUR1x0ZF5jIlGTvFj41WN1w1Pme_Vz9aJogmNesUEvRich1Z-eXFth89e66idZA8AvfTi_GoRPZU9kTqtS9_SzqQPiBlseEpI8LgKjQTfw9k964aGEGq4733rib9RUsI9HLMetPi39dNwHGNaX2R4di3JAaJK-j1TFKoL6jyH-WjS3CMN_aQDRKU8Y96IrExuzwNXyD8KH_e7ogIFvB6VOLfGg"
+});
+});
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00DSG00000Z1raK',
+				'ThirdPartyWebsite',
+				'https://orgfarm-b5c8097be2.test1.my.pc-rnd.site.com/ESWThirdPartyWebsite1763788210898',
+				{
+					scrt2URL: 'https://orgfarm-b5c8097be2.test1.my.pc-rnd.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://orgfarm-b5c8097be2.test1.my.pc-rnd.site.com/ESWThirdPartyWebsite1763788210898/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
 </body>
 </html>
+
